@@ -8,15 +8,7 @@ import java.util.Arrays;
  */
 public class IsAnagram {
 
-    public static void main(String[] args) throws Exception {
-        String s = "anagram";
-        String t = "nagaram";
-        boolean result = isAnagram(s, t);
-        System.out.println(result);
-    }
-
-
-    public static boolean isAnagram(String s, String t) {
+    public boolean isAnagram(String s, String t) {
         char[] sChars = s.toCharArray();
         Arrays.sort(sChars);
 

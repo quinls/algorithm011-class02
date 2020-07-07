@@ -4,7 +4,7 @@
  * @author akun
  * @date 2020/6/29
  */
-class RemoveDuplicates {
+public class RemoveDuplicates {
     public int removeDuplicates(int[] nums) {
         if (nums.length < 1) {
             return 0;

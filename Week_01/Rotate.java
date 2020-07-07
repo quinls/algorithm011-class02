@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 /**
  * 189. 旋转数组
  *
@@ -8,16 +6,8 @@ import java.util.Arrays;
  */
 public class Rotate {
 
-    public static void main(String[] args) throws Exception {
-        int[] nums = new int[]{-1};
-        System.out.println(Arrays.toString(nums));
-        int k = 2;
-        int[] rotate = rotate2(nums, k);
-        System.out.println(Arrays.toString(rotate));
-    }
-
     //方法一：新数组
-    public static int[] rotate1(int[] nums, int k) {
+    public int[] rotate1(int[] nums, int k) {
         int newIndex;
         int[] newNums = new int[nums.length];
         for (int i = 0; i < nums.length; ++i) {
@@ -28,7 +18,7 @@ public class Rotate {
     }
 
     //方法二：新数组
-    public static int[] rotate2(int[] nums, int k) {
+    public int[] rotate2(int[] nums, int k) {
         int newIndex;
         k = k % nums.length;
         int[] newNums = new int[nums.length];
